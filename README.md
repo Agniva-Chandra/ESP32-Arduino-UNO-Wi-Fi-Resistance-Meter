@@ -16,11 +16,14 @@ The ESP32 hosts a web page that displays the resistance in **real time**, automa
 ---
 
 ## 🔌 Circuit Diagram
-*(Replace with your image — below is the wiring concept)*  
 
-![image](https://github.com/user-attachments/assets/example-circuit-placeholder)
+<img width="1427" height="590" alt="image" src="https://github.com/user-attachments/assets/8c0832ba-ce9b-4292-adb6-c2472ba916fc" />
 
----
+
+
+<img width="1383" height="874" alt="image" src="https://github.com/user-attachments/assets/ba7c9f0c-75e6-41aa-aa55-c46b9f01b054" />
+
+
 
 ## 🧾 Components List
 
@@ -49,9 +52,9 @@ The ESP32 hosts a web page that displays the resistance in **real time**, automa
 ### **Voltage Divider (Arduino Side)**
 | From | Component            | To       |
 |------|----------------------|----------|
-| 5V   | Rref (1kΩ)           | Node A   |
-| Node A | Unknown resistor   | GND      |
-| Node A | A0 (Analog input)  | Arduino  |
+| 5V   | Rref (1kΩ)           | A0       |
+| A0   | Unknown resistor     | GND      |
+| A0   | A0 (Analog input)    | Arduino  |
 
 ---
 
@@ -73,10 +76,15 @@ Once powered on:
     - `"0 Ω"` → short circuit
     - `"Open"` → no connection
 
-Example:  
-![image](https://github.com/user-attachments/assets/example-web-ui)
+<img width="499" height="421" alt="image" src="https://github.com/user-attachments/assets/133c80c6-5068-40f3-8d46-a743d624e34d" />
 
----
+
+
+<img width="454" height="248" alt="image" src="https://github.com/user-attachments/assets/eda4ec4c-7a65-4178-b795-3f5b3ad9d74f" />
+ 
+
+
+
 
 ## 🔧 Code Overview
 
